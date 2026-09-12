@@ -2,9 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Shared custom styles across all project/guide pages go here */
-@layer components {
-  .site-nav a {
-    @apply text-slate-600 hover:text-slate-900 transition-colors;
-  }
+/* gray background from Svensson Joel's website (svenssonjoel.github.io) */
+.bg-gray-svensson {
+    background-color: rgb(192, 192, 192);
+}
+
+/* difficulty levels for projects. Difficulty names were stolen from haxagon.xyz */
+.beginner {
+    color: green;
+    background-color: rgba(135, 216, 135, 0.438);
+    padding: 5px;
+    margin-left: 8px;
+    border-radius: 12px;
+    border: 2px solid rgba(15, 65, 0, 0.474);
+}
+
+.average {
+    color: rgb(0, 43, 92);
+    background-color: rgba(62, 107, 255, 0.438);
+    padding: 3px;
+    border-radius: 12px;
+    border: 1px solid rgb(0, 29, 110);
+}
+
+.skilled {
+    color: rgb(97, 87, 0);
+    background-color: rgba(191, 208, 0, 0.438);
+    padding: 3px;
+    border-radius: 12px;
+    border: 1px solid rgb(107, 111, 0);
+}
+
+.expert {
+    color: rgb(83, 43, 0);
+    background-color: rgba(216, 126, 0, 0.438);
+    padding: 3px;
+    border-radius: 12px;
+    border: 1px solid rgb(65, 47, 0);
+}
+
+.master {
+    color: rgb(125, 0, 0);
+    background-color: rgba(180, 0, 0, 0.438);
+    padding: 3px;
+    border-radius: 12px;
+    border: 1px solid rgb(87, 0, 0);
 }

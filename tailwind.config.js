@@ -3,11 +3,13 @@ export default {
   content: [
     './index.html',
     './project/**/*.html',
-    './guide/**/*.html',
+    './course/**/*.html',
     './src/**/*.js',
+    './about.html',
   ],
   theme: {
     extend: {},
   },
   plugins: [],
 };
+
