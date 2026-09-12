@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Shared custom styles across all project/guide pages go here */
+@layer components {
+  .site-nav a {
+    @apply text-slate-600 hover:text-slate-900 transition-colors;
+  }
+}
