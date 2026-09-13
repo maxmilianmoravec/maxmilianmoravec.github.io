@@ -4,9 +4,12 @@ Standard project creation procedure
 
 1. Create copy of /project/project_template.html in /project and rename it
 2. Add proper record into /public/sitemap.xml
-3. Change title to "{project_name} | Maxmilián Moravec
+3. Change title to "{project_name} | Maxmilián Moravec"
 4. Set date to current date
 5. Fill content section with header, second headers and paragraphs / code
+6. Set meta description to a 1-2 sentence summary of the project
+7. Set canonical + og:url to the final /project/{filename}.html URL
+8. Set og:title to match <title>, og:image to a relevant project image (or fallback to profile pic)
 
 -->
 
@@ -15,8 +18,37 @@ Standard project creation procedure
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project template | Maxmilián Moravec</title>
+    <title>{project_name} | Maxmilián Moravec</title>
+
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="{project_name} — {one-sentence summary}."
+    />
+    <link
+      rel="canonical"
+      href="https://maxmilianmoravec.github.io/project/{filename}.html"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="{project_name} | Maxmilián Moravec" />
+    <meta
+      property="og:description"
+      content="{project_name} — {one-sentence summary}."
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://maxmilianmoravec.github.io/project/{filename}.html"
+    />
+    <meta
+      property="og:image"
+      content="https://maxmilianmoravec.github.io/image/{project_image_or_fallback}.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+
     <link rel="stylesheet" href="/src/style.css" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
   </head>
   <body
     class="bg-zinc-300 min-h-screen bg-[url(/image/background_repeat_hex.jpg)] bg-center bg-repeat"

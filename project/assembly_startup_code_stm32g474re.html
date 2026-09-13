@@ -4,9 +4,12 @@ Standard project creation procedure
 
 1. Create copy of /project/project_template.html in /project and rename it
 2. Add proper record into /public/sitemap.xml
-3. Change title to "{project_name} | Maxmilián Moravec
+3. Change title to "{project_name} | Maxmilián Moravec"
 4. Set date to current date
 5. Fill content section with header, second headers and paragraphs / code
+6. Set meta description to a 1-2 sentence summary of the project
+7. Set canonical + og:url to the final /project/{filename}.html URL
+8. Set og:title to match <title>, og:image to a relevant project image (or fallback to profile pic)
 
 -->
 
@@ -16,7 +19,36 @@ Standard project creation procedure
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assembly startup code for STM32G474RE | Maxmilián Moravec</title>
+
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Assembly startup code for STM32G474RE — How I made startup code for my MCU."
+    />
+    <link
+      rel="canonical"
+      href="https://maxmilianmoravec.github.io/project/{filename}.html"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Assembly startup code for STM32G474RE | Maxmilián Moravec" />
+    <meta
+      property="og:description"
+      content="Assembly startup code for STM32G474RE — How I made startup code for my MCU."
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://maxmilianmoravec.github.io/project/assembly_startup_code_stm32g474re.html"
+    />
+    <meta
+      property="og:image"
+      content="https://maxmilianmoravec.github.io/image/STM32G474RE_on_esd_gloves_white_background.jpeg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+
     <link rel="stylesheet" href="/src/style.css" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
   </head>
   <body
     class="bg-zinc-300 min-h-screen bg-[url(/image/background_repeat_hex.jpg)] bg-center bg-repeat"
@@ -40,9 +72,18 @@ Standard project creation procedure
             Assembly startup code for STM32G474RE
           </h1>
           <p class="m-5 text-lg">
-            this project will be public here at
-            <strong>September 14, 2026</strong>
+            This project will be released here at September 14, 2026
           </p>
+          <pre>
+            <code class="bg-slate-100 mx-10 block font-mono overflow-x-auto">int a = 0;
+int b = 3; 
+int c = a + b;
+
+if (c > a || c > b) {
+  break;
+}</code>
+          </pre>
+
           <!-- CONTENT END -->
         </div>
       </div>
