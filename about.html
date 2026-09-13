@@ -4,38 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Maxmilián Moravec - Personal embedded developer website</title>
-    <link rel="stylesheet" href="/src/style.css" /> 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
-    <body class="bg-zinc-300 overflow-x-hidden">
+  <body class="bg-zinc-300 overflow-x-hidden">
     <div class="grid grid-rows-2 md:grid-cols-2 md:grid-rows-1">
-
-        <div class="flex justify-center items-center">
-            <div class="p-10">
-                <h1 class="font-extrabold text-3xl md:text-5xl p-7 select-none" id="h-personal-name">Maxmilián Moravec</h1>
-                <p>I'm exploring the current world of ICs with processor cores from <a href="https://www.arm.com/product-filter?families=cortex-m&showall=true" target="_blank" rel="noopener noreferrer" class="underline">Arm</a> such as Cortex-M4 and other Cortex-M family cores. Also I'm building skills around electrical engineering and PCB development in <a href="https://www.kicad.org/" target="_blank" rel="noopener noreferrer" class="underline">KiCad</a>. I'm native Czech and I live in Prague, Czech Republic (Central Europe). My english is around B2 or higher. I'm building my projects without agentic coding because I belive this option teaches me the most.</p>
-                <p class="p-5 text-right">My private and trusted email: <strong>maxmilian.moravec@proton.me</strong></p>
-                <p class="p-5 text-right">&gt; 
-                <a href="/index.html" class="underline text-blue-500">RETURN </a>
-                </p>
-            </div>
+      <div class="flex justify-center items-center">
+        <div class="p-10">
+          <h1
+            class="font-extrabold text-3xl md:text-5xl p-7 select-none"
+            id="h-personal-name"
+          >
+            Maxmilián Moravec
+          </h1>
+          <p>
+            I'm exploring the current world of ICs with processor cores from
+            <a
+              href="https://www.arm.com/product-filter?families=cortex-m&showall=true"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="underline"
+              >Arm</a
+            >
+            such as Cortex-M4 and other Cortex-M family cores. Also I'm building
+            skills around electrical engineering and PCB development in
+            <a
+              href="https://www.kicad.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="underline"
+              >KiCad</a
+            >. I'm native Czech and I live in Prague, Czech Republic (Central
+            Europe). My english is around B2 or higher. I'm building my projects
+            without agentic coding because I belive this option teaches me the
+            most.
+          </p>
+          <p class="p-5 text-right">
+            My private and trusted email:
+            <strong>maxmilian.moravec@proton.me</strong>
+          </p>
+          <p class="p-5 text-right">
+            &gt;
+            <a href="/index.html" class="underline text-blue-500">RETURN </a>
+          </p>
         </div>
-        <div class="flex items-center md:min-h-screen">
-            <img src="/image/typing_keyboard.png" class="h-max align-middle" alt="My hand holding STM32G474RE with anti ESD gloves">
-        </div>
-        
+      </div>
+      <div class="flex items-center md:min-h-screen">
+        <img
+          src="/image/typing_keyboard.png"
+          class="h-max align-middle"
+          alt="My hand holding STM32G474RE with anti ESD gloves"
+        />
+      </div>
     </div>
-    
+
     <script type="module" src="/src/shared.js"></script>
     <script>
-         var counter = 0;
+      var counter = 0;
 
-        document.getElementById("h-personal-name").addEventListener("click", (event) => {
-            if (++counter >= 3) {   
-                window.open("https://www.youtube.com/watch?v=Kl1KiH6zWp4", "_blank");
-                counter = 0;
-            }
+      document
+        .getElementById("h-personal-name")
+        .addEventListener("click", (event) => {
+          if (++counter >= 3) {
+            window.open(
+              "https://www.youtube.com/watch?v=Kl1KiH6zWp4",
+              "_blank",
+            );
+            counter = 0;
+          }
         });
     </script>
+    <!-- Goat counter START -->
+    <script
+      data-goatcounter="https://maxmilianmoravec.goatcounter.com/count"
+      async
+      src="//gc.zgo.at/count.js"
+    ></script>
+    <!-- Goat counter END-->
   </body>
 </html>
