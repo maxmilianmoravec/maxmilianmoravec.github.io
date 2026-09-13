@@ -10,19 +10,13 @@
       name="description"
       content="About Maxmilián Moravec, an embedded developer from Prague, Czech Republic, specializing in Cortex-M firmware, assembly, and PCB design in KiCad."
     />
-    <link
-      rel="canonical"
-      href="https://maxmilianmoravec.github.io/about.html"
-    />
+    <link rel="canonical" href="https://maxmilianmoravec.dev/about.html" />
     <meta property="og:title" content="About Maxmilián Moravec" />
     <meta property="og:type" content="profile" />
-    <meta
-      property="og:url"
-      content="https://maxmilianmoravec.github.io/about.html"
-    />
+    <meta property="og:url" content="https://maxmilianmoravec.dev/about.html" />
     <meta
       property="og:image"
-      content="https://maxmilianmoravec.github.io/image/typing_keyboard.png"
+      content="https://maxmilianmoravec.dev/image/typing_keyboard.png"
     />
     <meta name="twitter:card" content="summary_large_image" />
   </head>
@@ -93,6 +87,20 @@
           }
         });
     </script>
+    <!-- migration to maxmilianmoravec.dev START-->
+    <script>
+      (function () {
+        if (window.location.hostname === "maxmilianmoravec.github.io") {
+          window.location.replace(
+            "https://maxmilianmoravec.dev" +
+              window.location.pathname +
+              window.location.search +
+              window.location.hash,
+          );
+        }
+      })();
+    </script>
+    <!-- migration to maxmilianmoravec.dev END-->
     <!-- Goat counter START -->
     <script
       data-goatcounter="https://maxmilianmoravec.goatcounter.com/count"

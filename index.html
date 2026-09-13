@@ -19,12 +19,12 @@
     />
     <meta
       property="og:image"
-      content="https://maxmilianmoravec.github.io/image/1MB_profile_pic.jpg"
+      content="https://maxmilianmoravec.dev/image/1MB_profile_pic.jpg"
     />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://maxmilianmoravec.github.io/" />
+    <meta property="og:url" content="https://maxmilianmoravec.dev/" />
 
-    <link rel="canonical" href="https://maxmilianmoravec.github.io/" />
+    <link rel="canonical" href="https://maxmilianmoravec.dev/" />
     <link rel="stylesheet" href="/src/style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
@@ -103,10 +103,24 @@
         "@type": "Person",
         "name": "Maxmilián Moravec",
         "jobTitle": "Embedded Developer",
-        "url": "https://maxmilianmoravec.github.io/",
+        "url": "https://maxmilianmoravec.dev/",
         "knowsAbout": ["STM32", "Cortex-M4", "Firmware", "Assembly programming"]
       }
     </script>
+    <!-- migration to maxmilianmoravec.dev START-->
+    <script>
+      (function () {
+        if (window.location.hostname === "maxmilianmoravec.github.io") {
+          window.location.replace(
+            "https://maxmilianmoravec.dev" +
+              window.location.pathname +
+              window.location.search +
+              window.location.hash,
+          );
+        }
+      })();
+    </script>
+    <!-- migration to maxmilianmoravec.dev END-->
     <!-- Goat counter START -->
     <script
       data-goatcounter="https://maxmilianmoravec.goatcounter.com/count"

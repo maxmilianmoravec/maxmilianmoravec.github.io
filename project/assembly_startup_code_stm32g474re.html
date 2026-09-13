@@ -27,11 +27,14 @@ Standard project creation procedure
     />
     <link
       rel="canonical"
-      href="https://maxmilianmoravec.github.io/project/{filename}.html"
+      href="https://maxmilianmoravec.dev/project/{filename}.html"
     />
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Assembly startup code for STM32G474RE | Maxmilián Moravec" />
+    <meta
+      property="og:title"
+      content="Assembly startup code for STM32G474RE | Maxmilián Moravec"
+    />
     <meta
       property="og:description"
       content="Assembly startup code for STM32G474RE — How I made startup code for my MCU."
@@ -39,11 +42,11 @@ Standard project creation procedure
     <meta property="og:type" content="article" />
     <meta
       property="og:url"
-      content="https://maxmilianmoravec.github.io/project/assembly_startup_code_stm32g474re.html"
+      content="https://maxmilianmoravec.dev/project/assembly_startup_code_stm32g474re.html"
     />
     <meta
       property="og:image"
-      content="https://maxmilianmoravec.github.io/image/STM32G474RE_on_esd_gloves_white_background.jpeg"
+      content="https://maxmilianmoravec.dev/image/STM32G474RE_on_esd_gloves_white_background.jpeg"
     />
     <meta name="twitter:card" content="summary_large_image" />
 
@@ -89,6 +92,20 @@ if (c > a || c > b) {
       </div>
     </main>
     <script type="module" src="/src/shared.js"></script>
+    <!-- migration to maxmilianmoravec.dev START-->
+    <script>
+      (function () {
+        if (window.location.hostname === "maxmilianmoravec.github.io") {
+          window.location.replace(
+            "https://maxmilianmoravec.dev" +
+              window.location.pathname +
+              window.location.search +
+              window.location.hash,
+          );
+        }
+      })();
+    </script>
+    <!-- migration to maxmilianmoravec.dev END-->
     <!-- Goat counter START -->
     <script
       data-goatcounter="https://maxmilianmoravec.goatcounter.com/count"

@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Crawl-delay: 1
 
-Sitemap: https://maxmilianmoravec.github.io/sitemap.xml
+Sitemap: https://maxmilianmoravec.dev/sitemap.xml

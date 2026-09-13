@@ -4,7 +4,7 @@
 - some information about me
 - projects I published 
 
-[maxmilianmoravec.github.io](https://maxmilianmoravec.github.io)
+[maxmilianmoravec.dev](https://maxmilianmoravec.dev)
 
 ### Projects so far
 - stm32g474re assembly startup code
