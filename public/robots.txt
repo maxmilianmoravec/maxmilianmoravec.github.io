@@ -31,6 +31,9 @@ User-agent: DataForSeoBot
 Disallow: 
 User-agent: archive.org_bot
 Disallow: 
+
 User-agent: *
 Disallow: /
 Crawl-delay: 20
+
+Sitemap: https://maxmilianmoravec.github.io/sitemap.xml

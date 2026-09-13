@@ -2,9 +2,11 @@
 
 Standard project creation procedure
 
-1. Change title to "{project_name} | Maxmilián Moravec
-2. Set date to current date
-3. Fill content
+1. Create copy of /project/project_template.html in /project and rename it
+2. Add proper record into /public/sitemap.xml
+3. Change title to "{project_name} | Maxmilián Moravec
+4. Set date to current date
+5. Fill content section with header, second headers and paragraphs / code
 
 -->
 
@@ -16,7 +18,7 @@ Standard project creation procedure
     <title>Project template | Maxmilián Moravec</title>
     <link rel="stylesheet" href="/src/style.css" />
   </head>
-  <body class="bg-zinc-300 min-h-screen bg-[url(/public/background_repeat_hex.jpg)] bg-center bg-repeat">
+  <body class="bg-zinc-300 min-h-screen bg-[url(/image/background_repeat_hex.jpg)] bg-center bg-repeat">
     <main>
       <div class="md:w-5/6 w-screen mx-auto">
         <div class="bg-zinc-800 p-4 flex justify-between">
@@ -25,16 +27,20 @@ Standard project creation procedure
           <time datetime="2026-09-12" class="text-gray-400">September 12, 2026</time>
           
         </div>
-        <div class="bg-gray-svensson font-serif h-screen p-5">
+        <div class="bg-gray-svensson font-serif min-h-screen p-5">
           <!-- CONTENT START -->
-          <h1 class="text-3xl font-bold text-slate-900 md:text-5xl">Project 2</h1>
-          <p class="mt-2 text-slate-600">Content for project 2 goes here.</p>
+          <h1 class="text-3xl font-bold text-slate-900 md:text-5xl">Project template</h1>
+          <p class="m-5 text-lg">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam convallis non nibh vel mollis. Duis tristique tellus ac arcu rutrum, in sagittis dolor ullamcorper. Cras nec mauris a justo sodales viverra. Suspendisse potenti. Maecenas quis ornare ante. Nullam eget ipsum interdum lectus congue molestie. Donec molestie faucibus tincidunt. Etiam vestibulum dolor id sem varius tempus. Donec sed justo sem. Vivamus rhoncus augue at ante facilisis ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce turpis odio, porttitor eu viverra sed, volutpat ac tortor.
+          </p>
           <pre>
             <code class="bg-slate-100 mx-10 block font-mono overflow-x-auto">int a = 0;
-int b = 4;
-int c = a + b; int c = a + b;int c = a + b;int c = a + b;int c = a + b;int c = a + b;int c = a + b;int c = a + b;int c = a + b;int c = a + b;int c = a + b;int c = a + b;int c = a + b;int c = a + b;int c = a + b;int c = a + b;int c = a + b;int c = a + b;int c = a + b; 
+int b = 3; 
+int c = a + b;
 
-a *= c;</code>
+if (c > a || c > b) {
+  break;
+}</code>
           </pre>
 
           <!-- CONTENT END -->

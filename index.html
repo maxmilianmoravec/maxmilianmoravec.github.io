@@ -6,9 +6,25 @@
     <title>Maxmilián Moravec - Personal embedded developer website</title>
     <meta
       name="description"
-      content="Personal website of Maxmilián Moravec, an embedded developer specializing in STM32 and Cortex-M4 projects, firmware, and low-level assembly programming."
+      content="Personal website of Maxmilián Moravec, an embedded developer specializing in Cortex-M firmware, and low-level programming in assembly and C."
     />
 
+    <meta
+      property="og:title"
+      content="Maxmilián Moravec — Embedded Developer"
+    />
+    <meta
+      property="og:description"
+      content="Embedded developer specializing in STM32 and Cortex-M4 firmware and assembly."
+    />
+    <meta
+      property="og:image"
+      content="https://maxmilianmoravec.io/image/1MB_profile_pic.jpg"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://maxmilianmoravec.github.io/" />
+
+    <link rel="canonical" href="https://maxmilianmoravec.github.io/" />
     <link rel="stylesheet" href="/src/style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
@@ -16,7 +32,7 @@
     <div class="grid xl:grid-cols-2 gap-4">
       <div>
         <img
-          src="./profile_pic_original.jpg"
+          src="/image/STM32G474RE_on_esd_gloves.jpg"
           class="hidden xl:block height: h-screen shadow-black shadow-2xl"
           alt="My hand holding STM32G474RE with anti ESD gloves"
         />
@@ -30,39 +46,42 @@
           </div>
           <p class="p-5">
             &gt;
-            <a href="./about.html " class="underline text-blue-500 text-sm"
+            <a href="/about.html " class="underline text-blue-500 text-sm"
               >About me
             </a>
           </p>
         </div>
 
         <div>
-          <h1 class="font-extrabold md:text-3xl text-xl">
+          <h2 class="font-extrabold md:text-3xl text-xl">
             <strong>PROJECTS</strong
             ><span class="font-extralight text-lg md:text-2xl pl-5">
               ← free</span
             >
-          </h1>
+          </h2>
           <p class="p-5">
             &gt;
-            <a href="/project/project_template.html" class="text-blue-500">
+            <a
+              href="/project/assembly_startup_code_stm32g474re.html"
+              class="text-blue-500"
+            >
               <span class="underline">
                 Assembly startup code for STM32
                 <span class="whitespace-nowrap"> G474RE </span>
               </span>
               <span class="whitespace-nowrap">
-                <span class="beginner"> simple</span>
+                <span class="beginner">beginner</span>
               </span>
             </a>
           </p>
         </div>
         <div>
-          <h1 class="pt-16 font-extrabold text-xl md:text-3xl">
+          <h2 class="pt-16 font-extrabold text-xl md:text-3xl">
             <strong>COURSES</strong
             ><span class="font-extralight text-lg md:text-2xl pl-5">
               ← free</span
             >
-          </h1>
+          </h2>
           <p class="p-5">
             &gt; <a href="#">Lorem ipsum, progressus in opere</a>
           </p>
@@ -71,12 +90,22 @@
     </div>
     <div>
       <img
-        src="./profile_pic_original.jpg"
+        src="/image/STM32G474RE_on_esd_gloves.jpg"
         class="block xl:hidden shadow-black shadow-2xl"
         alt="My hand holding STM32G474RE with anti ESD gloves"
       />
     </div>
 
     <script type="module" src="/src/shared.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Maxmilián Moravec",
+        "jobTitle": "Embedded Developer",
+        "url": "https://maxmilianmoravec.github.io/",
+        "knowsAbout": ["STM32", "Cortex-M4", "Firmware", "Assembly programming"]
+      }
+    </script>
   </body>
 </html>
